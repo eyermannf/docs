@@ -550,7 +550,7 @@ To listen to advertisements inside a class (that could be a driver) we could ini
         end
         def cb(svc,manu)
             print("Full buffer:")
-            print(self.buf[1..self.buf[0]])
+            print(self.buf[0..self.buf[0]])
             if svc != 0 # if service data present
                 print("service data:")
                 var _len = self.buf[svc-2]-1
